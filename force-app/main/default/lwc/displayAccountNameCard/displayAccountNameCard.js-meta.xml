@@ -8,7 +8,7 @@
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
             <property name="height" type="Integer" label="Lightning Card height"/>
-            <property name="backgroundColor" type="String" label="Lightning Card background color"/>
+            <property name="buttonLabel" type="String" label="Child Button Name" default="Next Account"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

@@ -1,9 +1,10 @@
-import { LightningElement } from 'lwc'
+import { LightningElement, api } from 'lwc'
 import getMyAccounts from '@salesforce/apex/DisplayAccountController.getMyAccounts'
 
 export default class DisplayAccountNameButton extends LightningElement {
+    @api buttonLabel
     currentAccountName
-    accountList = []
+    accountList
     count
 
     connectedCallback () {
