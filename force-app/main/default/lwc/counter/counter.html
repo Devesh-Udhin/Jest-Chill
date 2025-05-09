@@ -1,0 +1,14 @@
+<template>
+    <lightning-card variant="base">
+        <div class="title" slot="title">
+            {cardTitle}
+        </div>
+        <div class="slds-box slds-align_absolute-center slds-m-bottom_small" style={backgroundColor}>
+            <p>Counter: {count}</p>
+        </div>
+        <div class="slds-align_absolute-center">
+            <lightning-button class="subtract-btn slds-m-horizontal_large" variant="brand" label="-" onclick={handleSubtractButton}></lightning-button>
+            <lightning-button class="add-btn slds-m-horizontal_large" variant="brand" label="+" onclick={handleAddButton}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
